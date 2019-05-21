@@ -1,0 +1,42 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"deploy": {
+			"packages":[
+				{
+					"name":"Vue js test ",
+					"description": "Vue js test ",
+					"files":[
+						"**/*.php",
+						"**/*.js",
+						"**/*.txt"
+					],
+					"deployOnSave": false,
+
+				}
+			],
+			"targets": [
+				{
+					"type":"sftp",
+					"name":"Alternate test env",
+					"description":"Testing alternate test env ",
+					"dir":"/",
+					"host":"tab4lioz.beget.tech",
+					"port":22,
+					"user":"tab4lioz_wob202r",
+					"password":"T2rlpmL5*kl",
+					"checkBeforeDeploy": true,
+					"mappings":[
+						{
+							"source":"/",
+							"target":"/home/t/tab4lioz/wob202r/clearVueTest/"
+						}
+					],
+				},
+			]
+		},
+}
